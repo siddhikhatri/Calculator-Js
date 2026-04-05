@@ -48,16 +48,9 @@ function displayResult() {
 
 // Clear display
 function clearInput() {
-    if(display !== null)
-    {
-        display.value="0";
-    }
-    else{
-        display.value = "";
-    }    
-    
+        display.value="0";//shows 0 in display [inputbox]    
 }
 
 function clearAllInput(){
-    display.value="";
+    display.value=""; //resets and also removes 0
 }
