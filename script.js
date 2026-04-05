@@ -3,7 +3,14 @@ let display = document.getElementById("inputText");
 
 // Add value to display
 function press(value) {
-    display.value += value; //appends value into textbox
+    if(display.value === "0")
+    {
+        display.value=value;
+    }
+    else
+    {
+        display.value += value; //appends value into textbox
+    }
 }
 
 // Calculate result
@@ -41,5 +48,16 @@ function displayResult() {
 
 // Clear display
 function clearInput() {
-    display.value = "";
+    if(display !== null)
+    {
+        display.value="0";
+    }
+    else{
+        display.value = "";
+    }    
+    
+}
+
+function clearAllInput(){
+    display.value="";
 }
