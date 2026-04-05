@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <center>
+    <h1><u>Calculator</u></h1>
+    <table>
+        <tr>
+            <td  colspan="4"><input type="text" name="inputText" id="inputText"></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td><button onClick="press('1')">1</button></td>
+            <td><button onClick="press('2')">2</button></td>
+            <td><button onClick="press('3')">3</button></td>
+            <td><button onClick="press('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button onClick="press('4')">4</button></td>
+            <td><button onClick="press('5')">5</button></td>
+            <td><button onClick="press('6')">6</button></td>
+            <td><button onClick="press('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onClick="press('7')">7</button></td>
+            <td><button onClick="press('8')">8</button></td>
+            <td><button onClick="press('9')">9</button></td>
+            <td><button onClick="press('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button onClick="press('0')">0</button></td>
+            <td><button onClick="clearInput()">C</button></td>
+            <td><button onClick="displayResult()">=</button></td>
+            <td><button onClick="press('/')">/</button></td>
+        </tr>
+    </table>
+    </center>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
